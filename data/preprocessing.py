@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import re
 import unicodedata
-from typing import Dict
+
 
 import torch
 import torchvision.transforms as T
@@ -11,7 +11,7 @@ import torchvision.transforms.functional as TF
 from PIL import Image, ImageFilter
 
 # Style name → integer label mapping
-_STYLE_LABELS: Dict[str, int] = {
+_STYLE_LABELS: dict[str, int] = {
     "casual": 0,
     "formal": 1,
     "streetwear": 2,
@@ -138,7 +138,7 @@ def clean_text(text: str) -> str:
     return text.lower().strip()
 
 
-def build_style_label_map() -> Dict[str, int]:
+def build_style_label_map() -> dict[str, int]:
     """
     Return the mapping from style names to integer class indices.
 

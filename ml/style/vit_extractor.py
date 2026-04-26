@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import logging
-from typing import List
+
 
 import numpy as np
 import torch
@@ -61,7 +61,7 @@ class ViTExtractor:
         cls_embedding = outputs.last_hidden_state[:, 0, :].squeeze(0)
         return cls_embedding.cpu().numpy()
 
-    def extract_batch(self, images: List[Image.Image]) -> np.ndarray:
+    def extract_batch(self, images: list[Image.Image]) -> np.ndarray:
         """
         Extract feature vectors for a batch of PIL images.
 
