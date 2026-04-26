@@ -11,6 +11,21 @@ class UserCreate(BaseModel):
     password: str
 
 
+class LoginRequest(BaseModel):
+    """Schema for authenticating an existing user."""
+
+    email: EmailStr
+    password: str
+
+
+class TokenResponse(BaseModel):
+    """Schema returned upon successful authentication."""
+
+    access_token: str
+    token_type: str = "bearer"
+    user_id: uuid.UUID
+
+
 class UserProfile(BaseModel):
     """Schema for updating a user's style profile after the style quiz."""
 

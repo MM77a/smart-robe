@@ -15,6 +15,12 @@ class ItemUploadResponse(BaseModel):
     model_config = {"from_attributes": True}
 
 
+class PhotoUploadResponse(BaseModel):
+    """Schema returned after a user photo is uploaded for virtual try-on."""
+
+    photo_url: str
+
+
 class RecommendationRequest(BaseModel):
     """Schema for requesting outfit recommendations."""
 
