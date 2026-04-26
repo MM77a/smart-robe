@@ -27,7 +27,8 @@ async def upload_wardrobe_item(
     persist the WardrobeItem to the database, and return the response schema.
     """
     # Persist the raw upload to a temporary local path
-    import os, tempfile
+    import os
+    import tempfile
     suffix = os.path.splitext(file.filename or "upload.jpg")[1] or ".jpg"
     with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as tmp:
         content = await file.read()

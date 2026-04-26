@@ -70,7 +70,7 @@ class PoseEstimator:
             pass
 
         # Placeholder: proportional keypoint positions assuming a
-        # roughly centred standing person occupying ~80 % of the frame.
+        # roughly centered standing person occupying ~80 % of the frame.
         cx = width // 2
         keypoints: dict[str, tuple[int, int, float]] = {
             "nose":            (cx,                  int(height * 0.10), 0.9),
