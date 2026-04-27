@@ -8,11 +8,12 @@ interface LayoutProps {
 }
 
 const NAV_LINKS = [
-  { href: '/',         label: 'Home'       },
-  { href: '/quiz',     label: 'Style Quiz' },
-  { href: '/wardrobe', label: 'Wardrobe'   },
-  { href: '/outfits',  label: 'Outfits'    },
-  { href: '/tryon',    label: 'Try-On'     },
+  { href: '/',               label: 'Home'       },
+  { href: '/quiz',           label: 'Style Quiz' },
+  { href: '/wardrobe',       label: 'Wardrobe'   },
+  { href: '/outfits',        label: 'Outfits'    },
+  { href: '/tryon',          label: 'Try-On'     },
+  { href: '/virtual-try-on', label: 'Demo'       },
 ];
 
 export default function Layout({ children }: LayoutProps) {

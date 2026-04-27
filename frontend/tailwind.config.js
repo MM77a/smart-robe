@@ -34,11 +34,16 @@ module.exports = {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%':      { transform: 'translateY(-8px)' },
         },
+        'scroll-x': {
+          '0%':   { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         shimmer:     'shimmer 3s linear infinite',
         'pulse-glow':'pulse-glow 2.5s ease-in-out infinite',
         float:       'float 3s ease-in-out infinite',
+        'scroll-x':  'scroll-x 45s linear infinite',
       },
     },
   },
