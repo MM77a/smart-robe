@@ -1,0 +1,44 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# ESLint generated config (created interactively, committed separately if needed)
+frontend/.eslintrc.json
+
+# Next.js auto-generated types
+frontend/next-env.d.ts
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+.eggs/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+*.log
+*.pid
+
+frontend/tsconfig.tsbuildinfo
